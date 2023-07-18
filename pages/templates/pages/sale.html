@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Sale page 
+{% endblock title %}
+
+{% block content %}
+
+    {% for product in products %}
+        <div class="product">
+            <h2>{{ product.title }}</h2>
+            <a href="{% url 'sale_detail' product.pk %}">
+                <img src="{{ product.image.url }}" alt="piano">
+            </a>
+        </div>
+    {% endfor %}
+
+{% endblock %}

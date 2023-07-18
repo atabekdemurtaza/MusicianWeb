@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+
+    Error page
+
+{% endblock %}
+
+{% block content %}
+    <div class="error-page">
+        <p>
+            <img id="error" src="{% static 'images/jpeg/error.jpg' %}" alt="Fender Rhodes, Hohner Clavinet,
+                    and Wurlitzer EP200" />
+        </p>
+        <p>
+            Oops. We do not have any information &#128549;
+        </p>
+    </div>
+{% endblock %}
